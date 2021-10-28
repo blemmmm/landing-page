@@ -1,0 +1,456 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: white;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0px
+}
+
+#title {
+    padding-left: 25px;
+    float: left;
+}
+
+#header-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+    float: right;
+    list-style-type: none;
+    padding-right: 25px;
+}
+
+#nav li {
+    float: left;
+    padding: 25px 20px;
+}
+
+#nav li:hover {
+    background-color: #e6e6e6;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: #0050b0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero {
+    padding: 0px;
+    width: auto;
+}
+
+.img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.hero-caption {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 25%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%;
+    font-size: 30px;
+}
+
+#product {
+  padding-top: 150px;
+}
+
+#product h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#product p {
+    text-align: justify;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#why-protein {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: flex-start;
+    padding-top: 150px;
+}
+
+.video-desc {
+    width: 50%;
+    padding-left: 25px;
+    text-align: justify;
+}
+
+.video-desc p{
+    font-size: 14px;
+}
+.video-desc h3{
+    margin: 0px;
+}
+
+#promos {
+  padding-top: 150px;
+}
+
+.promo-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-cards {
+    width: 32%;
+    height: 50%;
+    border-style: solid;
+    border-color: #024392;
+    border-radius: 5px;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+}
+
+.promo-title {
+    width: 100%;
+    background-color: #024392;
+    color: white;
+    text-align: center;
+}
+
+
+.discount{
+    font-size: 15px;
+    color: #828282;
+    text-decoration: line-through;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.promo-cards img {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}   
+
+.btn {
+    border-style: none;
+    background-color: #0050b0;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #024392;
+}
+
+.footer {
+    height: auto;
+    background-color: #0050b0;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#email {
+    padding: 10px;
+    width: 250px;
+}
+#form .btn {
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+    width: 100px;
+    background-color: #024392;
+    width: unset;
+}
+
+#form .btn:hover {
+    background-color: goldenrod;
+}
+
+@media screen and (max-width: 1020px){
+    #product p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #product table {
+        padding-left: 15px;
+    }
+    .video-desc {
+        padding-left: 10px;
+    }
+    .hero-caption {
+        top: 25%; /* Adjust this value to move the positioned div up and down */
+        color: black;
+    }
+    #why-protein {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .instructions {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .promo-div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+@media screen and (max-width: 976px) {
+    .promo-cards img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .hero-caption {
+        top: 25%; /* Adjust this value to move the positioned div up and down */
+    }
+    .promo-title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    #product h1{
+        font-size: 45px;
+    }
+    .promo-title {
+        font-size: 12px;
+    }
+    #why-protein {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-desc {
+        width: 100%;
+        padding-top: 25px;
+        text-align: justify;
+    }
+    .promo-cards img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav li {
+        float: left;
+    }
+    .nav-link a{
+        font-size: 15px;
+    }
+    #nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    #header-img {
+        padding-top: 10px;
+    }
+    .hero {
+        padding-top: 20%;
+        
+    }
+    .img {
+        width: 100%;
+    }
+    .hero-caption {
+        top: 25%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .promo-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo-cards {
+        width: 75%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .promo-title {
+        font-size: 15px;
+    }
+    .hero {
+        padding-top: 20%;
+        
+    }
+    .img {
+        width: 100%;
+    }
+    .hero-caption {
+        top: 25%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .features {
+        flex-direction: column;
+    }
+    #video {
+        width: 100%
+    }
+    .hero {
+        padding-top: 20%;
+        
+    }
+    .img {
+        width: 100%;
+    }
+    .hero-caption {
+        top: 25%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding-top: 20%;
+        
+    }
+    .img {
+        width: 100%;
+    }
+    .hero-caption {
+        top: 25%;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .hero {
+        padding-top: 40%;
+        
+    }
+    .img {
+        width: 100%;
+    }
+    .hero-caption {
+        top: 35%;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .hero {
+        padding-top: 35%;
+        
+    }
+    .img {
+        width: 100%;
+    }
+    .hero-caption {
+        top: 30%;
+        font-size: 15px;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email-form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+    #email {
+        width: 200px;
+    }
+
+}
